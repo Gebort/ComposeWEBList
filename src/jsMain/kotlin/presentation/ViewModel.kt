@@ -14,7 +14,7 @@ class ViewModel(
     private val repository: ListRepository
 ) {
 
-    private val scope = CoroutineScope(Dispatchers.Main)
+    private val scope = CoroutineScope(Dispatchers.Default)
 
     private val _listState = MutableStateFlow(State())
     val listState = _listState.asStateFlow()
